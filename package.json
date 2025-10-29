@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://aclaudtech-lgtm.github.io/aclaud-landing/",
+  "homepage": "https://aclaud.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
