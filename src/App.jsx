@@ -17,7 +17,7 @@ export default function Home() {
     <main className="text-slate-100 bg-[#0E1B2A] min-h-screen font-inter">
       {/* Navbar */}
       <nav className="fixed w-full top-0 left-0 z-50 bg-[#0E1B2A]/80 backdrop-blur-md border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-blue-400 cursor-pointer" onClick={() => scrollToSection('hero')}>
             aclaud
           </div>
