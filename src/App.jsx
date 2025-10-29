@@ -14,26 +14,26 @@ export default function Home() {
   };
 
   return (
-    <main className="text-slate-100 bg-[#0E1B2A] min-h-screen font-inter">
+    <main className="inline text-slate-100  min-h-screen font-inter">
       {/* Navbar */}
-      <nav className="fixed w-full top-0 left-0 z-50 bg-[#0E1B2A]/80 backdrop-blur-md border-b border-slate-800">
-        <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="inline fixed top-0 left-0 z-50 bg-[#0E1B2A]/80 backdrop-blur-md border-b border-slate-800">
+        <div className="inline  mx-auto px-6 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-blue-400 cursor-pointer" onClick={() => scrollToSection('hero')}>
             aclaud
           </div>
-          <div className="hidden md:flex space-x-8 text-slate-300">
+          <div className="hidden md:flex space-x-8 text-blue-300">
             {['about', 'services', 'process', 'why', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="hover:text-blue-400 transition"
+                className="bg-blue-500 text-blue-300 hover:text-blue-400 transition"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
             ))}
           </div>
           <button
-            className="md:hidden text-slate-300"
+            className="md:hidden bg-blue-500 text-slate-300"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -71,7 +71,7 @@ export default function Home() {
           Aclaud Technologies helps startups and growing businesses build trust in the cloud through expert engineering, security, and compliance consulting.
         </motion.p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button onClick={() => scrollToSection('contact')} className="bg-[#1E90FF] text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-500 transition">Schedule Discovery Call</button>
+          <button onClick={() => scrollToSection('contact')} className="bg-[#1E90FF] text-blue-300 px-6 py-3 rounded-xl font-semibold hover:bg-blue-500 transition">Schedule Discovery Call</button>
           <button onClick={() => scrollToSection('services')} className="border border-blue-400 text-blue-300 px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Request Capabilities Deck</button>
         </div>
       </section>
@@ -140,9 +140,9 @@ export default function Home() {
         <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
           Preparing for SOC 2, scaling your infrastructure, or seeking strategic security guidance? Our team is ready to help.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <a href="mailto:info@aclaud.com" className="bg-[#1E90FF] px-6 py-3 rounded-xl font-semibold hover:bg-blue-500 transition">Email Us</a>
-          <a href="#" className="border border-blue-400 text-blue-300 px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Request NDA & Proposal</a>
+        <div className="flex flex-wrap gap-4 justify-center text-white">
+          <a href="mailto:aclaudtechnologies@gmail.com" className="border border-blue-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Email Us</a>
+          <a href="#" className="border border-blue-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Request NDA & Proposal</a>
         </div>
       </section>
 
