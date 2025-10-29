@@ -8,7 +8,7 @@ export default defineConfig({
      react(),
      tailwindcss(),
    ],
-  base: '/aclaud-landing',
+  base: '/',
   build: {
     outDir: 'dist',
   },
