@@ -14,19 +14,19 @@ export default function Home() {
   };
 
   return (
-    <main className="inline text-slate-100  min-h-screen font-inter">
+    <main className="text-slate-100  min-h-screen font-inter">
       {/* Navbar */}
-      <nav className="inline fixed top-0 left-0 z-50 bg-[#0E1B2A]/80 backdrop-blur-md border-b border-slate-800">
-        <div className="inline  mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-blue-400 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            aclaud
+      <nav className="top-0 z-50 backdrop-blur-md border-b border-slate-800">
+        <div className="flex justify-between items-center mx-auto px-6 py-4 flex">
+          <div className="text-left text-2xl font-bold text-white cursor-pointer" onClick={() => scrollToSection('hero')}>
+          aclaud
           </div>
-          <div className="hidden md:flex space-x-8 text-blue-300">
+          <div className="text-right hidden md:flex space-x-8 text-blue-500">
             {['about', 'services', 'process', 'why', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="bg-blue-500 text-blue-300 hover:text-blue-400 transition"
+                className="bg-blue-800 text-blue-500 hover:text-blue-300 transition"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
@@ -71,8 +71,8 @@ export default function Home() {
           Aclaud Technologies helps startups and growing businesses build trust in the cloud through expert engineering, security, and compliance consulting.
         </motion.p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button onClick={() => scrollToSection('contact')} className="bg-[#1E90FF] text-blue-300 px-6 py-3 rounded-xl font-semibold hover:bg-blue-500 transition">Schedule Discovery Call</button>
-          <button onClick={() => scrollToSection('services')} className="border border-blue-400 text-blue-300 px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Request Capabilities Deck</button>
+          <button onClick={() => scrollToSection('contact')} className="bg-[#1E90FF] text-blue-500 px-6 py-3 rounded-xl font-semibold hover:text-blue-400 transition">Schedule Discovery Call</button>
+          <button onClick={() => scrollToSection('services')} className="border border-blue-400 text-blue-500 px-6 py-3 rounded-xl font-semibold hover:text-blue-400 transition">Request Capabilities Deck</button>
         </div>
       </section>
 
