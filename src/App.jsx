@@ -33,19 +33,19 @@ export default function Home() {
             ))}
           </div>
           <button
-            className="md:hidden bg-blue-500 text-slate-300"
+            className="md:hidden bg-blue-500 text-blue-500"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
         {menuOpen && (
-          <div className="md:hidden flex flex-col space-y-4 px-6 pb-6 text-slate-300 bg-[#0E1B2A] border-t border-slate-800">
+          <div className="md:hidden flex flex-col space-y-4 px-6 pb-6 text-blue-500 bg-[#0E1B2A] border-t border-slate-800">
             {['about', 'services', 'process', 'why', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-left hover:text-blue-400 transition"
+                className="text-left hover:text-blue-300 transition"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
