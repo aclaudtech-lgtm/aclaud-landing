@@ -141,7 +141,7 @@ export default function Home() {
           Preparing for SOC 2, scaling your infrastructure, or seeking strategic security guidance? Our team is ready to help.
         </p>
         <div className="flex flex-wrap gap-4 justify-center text-white">
-          <a href="mailto:aclaudtechnologies@gmail.com" className="border border-blue-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Email Us</a>
+          <a href="mailto:info@aclaud.com" className="border border-blue-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Email Us</a>
           <a href="#" className="border border-blue-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900/30 transition">Request NDA & Proposal</a>
         </div>
       </section>
